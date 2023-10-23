@@ -1,41 +1,26 @@
-The echo command to create and edit the .gitignore file. Enter the following command to create the file:
 
-echo *.csv > .gitignore
+### Date created
+24th October 2023
 
-This command creates a .gitignore file and adds a rule to ignore all files with a .csv extension.
+### Project Title
+version control and GitHub
 
-Commit the .gitignore file and push it to my GitHub repository to make sure it takes effect on the remote repository.
+### Description
+Set Up Your Repository: First, I'll fork a repository to get my own copy of a project template. Then, I'll clone it to my local computer. The initial task involves adding my bikeshare.py file, the data file, and a .gitignore file to exclude the data file from version control. This is done to keep the data private, prevent unnecessary tracking of large files on GitHub, and ensure that changes in the data don't affect the code.
 
-git add .gitignore
+Improve Documentation: Next, I'll create branches using Git. One of the branches I'll work on is the documentation branch. In this branch, I'll add project documentation in a README file and enhance the docstrings in my bikeshare.py file. Then, I'll push my changes back to the remote repository.
 
-git commit -m "Added .gitignore to exclude CSV files"
+Refactor Code: Another branch I'll be working on is the refactoring branch. In this branch, I can make improvements to the efficiency and readability of my code in the bikeshare.py file. I'll commit my code as I work, ensuring at least three commits with meaningful messages. Importantly, the documentation branch focuses on docstrings, while the refactoring branch focuses on code changes. This allows me to work on both branches simultaneously without conflicts.
 
-git push origin master
+Merge Branches: Once I've completed my work, I can merge both branches into the master branch and push the changes back to the remote repository. This ensures that the improvements made in the documentation and code are consolidated into the main project.
 
-With the .gitignore file in place, Git will ignore any CSV files in the repository, preventing them from being pushed to GitHub. 
+### Files used
+bikeshare.py
+chicago.csv
+new_york_city.csv
+washington.csv
 
-Can use the move command on Windows to move bikeshare.py script and data files into the local repository. 
+### Credits
+https://udacity.github.io/git-styleguide/
+https://deepsource.com/blog/git-branch-naming-conventions
 
-# Moving the bikeshare.py script
-move "C:\Users\Ezeizu Vitalis\Downloads\Udacity_project\workspace\home\bikeshare.py"
-
-# Moving data files (if they are in a directory)
-move "C:\Users\Ezeizu Vitalis\Downloads\Udacity_project\workspace\home\chicago.csv"
-        
-move "C:\Users\Ezeizu Vitalis\Downloads\Udacity_project\workspace\home\new_york_city.csv"
-
-move "C:\Users\Ezeizu Vitalis\Downloads\Udacity_project\workspace\home\washington.csv"
-
-Can use the git status command to see the changes made in the local repository. It will show that the files have been added or modified.
-
-Git add command is used to stage the changes, and then commit with a message. 
-
-git add .
-git commit -m "Added bikeshare.py and data files"
-
-Finally, git push command is used to push changes to my GitHub repository. This will sync with my local repository with the one on GitHub.
-
-
-git push origin master
-
-Now, bikeshare.py script and data files are in my local repository, and the changes are reflected on my GitHub fork. I can work on these files locally, commit my changes, and push them to my GitHub repository as needed.
