@@ -1,17 +1,15 @@
->**Note**: Please **fork** the current Udacity repository so that you will have a **remote** repository in **your** Github account. Clone the remote repository to your local machine. Later, as a part of the project "Post your Work on Github", you will push your proposed changes to the remote repository in your Github account.
+The echo command to create and edit the .gitignore file. Enter the following command to create the file:
 
-### Date created
-Include the date you created this project and README file.
+echo *.csv > .gitignore
 
-### Project Title
-Replace the Project Title
+This command creates a .gitignore file and adds a rule to ignore all files with a .csv extension.
 
-### Description
-Describe what your project is about and what it does
+Commit the .gitignore file and push it to my GitHub repository to make sure it takes effect on the remote repository.
 
-### Files used
-Include the files used
+git add .gitignore
 
-### Credits
-It's important to give proper credit. Add links to any repo that inspired you or blogposts you consulted.
+git commit -m "Added .gitignore to exclude CSV files"
 
+git push origin master
+
+With the .gitignore file in place, Git will ignore any CSV files in the repository, preventing them from being pushed to GitHub. 
